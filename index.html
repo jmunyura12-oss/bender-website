@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<!-- ═══════════════════════════════════════════════════════
+     ✏️  EDIT: Page title & SEO meta tags
+     ═══════════════════════════════════════════════════════ -->
+<title>Bender Exports | Premium Rwandan Specialty Coffee Exporter</title>
+<meta name="description" content="Bender Coffee Company Ltd — Rwanda's premier specialty coffee exporter since 2017. Direct-trade green beans from Musaza, Nyungwe & Nyarubaka washing stations."/>
+<meta name="keywords"    content="Rwanda specialty coffee export, green coffee Rwanda, Bender Exports, Musaza washing station, Nyungwe coffee, Nyarubaka coffee, African coffee exporter"/>
+<meta name="robots"      content="index, follow"/>
+<link rel="canonical"    href="https://bender-exports.com/"/>
+
+<!-- Open Graph (Social Media Preview) -->
+<meta property="og:type"        content="website"/>
+<meta property="og:title"       content="Bender Exports | Premium Rwandan Specialty Coffee"/>
+<meta property="og:description" content="Direct-trade specialty coffee from the heart of Africa."/>
+<meta property="og:image"       content="assets/images/og-image.jpg"/>
+<meta property="og:url"         content="https://bender-exports.com/"/>
+<meta name="twitter:card"       content="summary_large_image"/>
+
+<!-- Schema.org structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bender Coffee Company Ltd",
+  "alternateName": "Bender Exports",
+  "url": "https://bender-exports.com",
+  "logo": "assets/images/logo.png",
+  "foundingDate": "2017",
+  "description": "Rwanda's premier specialty coffee exporter operating three washing stations.",
+  "areaServed": "Worldwide",
+  "address": { "@type": "PostalAddress", "addressCountry": "RW" }
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════════════
+     FONTS — Poppins (same as Visit Rwanda)
+     ═══════════════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet"/>
+
+<!-- ═══════════════════════════════════════════════════════
+     STYLESHEETS
+     Edit css/theme.css  → colors, fonts, spacing
+     Edit css/main.css   → section layouts & components
+     ═══════════════════════════════════════════════════════ -->
+<link rel="stylesheet" href="css/theme.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+     ✏️  Edit: logo, brand name, menu links
+     ═══════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">
+    <!-- ✏️ Replace logo.png with your logo file -->
+    <img src="assets/images/logo.png" alt="Bender Exports Logo" width="110" height="42"/>
+    <div class="nav-brand">
+      <!-- ✏️ Change company name here -->
+      <span class="nav-brand-name">Bender Exports</span>
+      <span class="nav-brand-sub">Rwanda · Est. 2017</span>
+    </div>
+  </a>
+
+  <ul class="nav-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#stations">Origins</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li class="nav-cta-wrap"><a href="#contact" class="nav-cta">Request Samples</a></li>
+  </ul>
+
+  <!-- Mobile hamburger icon -->
+  <div class="hamburger" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile full-screen menu -->
+<div class="mob-overlay" id="mobOverlay">
+  <a href="#about">About</a>
+  <a href="#stations">Origins</a>
+  <a href="#process">Process</a>
+  <a href="#impact">Impact</a>
+  <a href="#contact">Enquire</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO — FULLSCREEN SLIDESHOW
+     ✏️  Edit: slide images, headline text, button labels
+         Add more slides by duplicating a .hslide div
+         Add matching .hdot for each new slide
+     ═══════════════════════════════════════════════════════ -->
+<header id="hero">
+
+  <div class="hero-slides">
+    <!-- SLIDE 1 — replace hero-1.jpg with your image -->
+    <div class="hslide on"  style="background-image: url('assets/images/hero-1.jpg')"></div>
+    <!-- SLIDE 2 -->
+    <div class="hslide"     style="background-image: url('assets/images/hero-2.jpg')"></div>
+    <!-- SLIDE 3 -->
+    <div class="hslide"     style="background-image: url('assets/images/hero-3.jpg')"></div>
+    <!-- SLIDE 4 -->
+    <div class="hslide"     style="background-image: url('assets/images/hero-4.jpg')"></div>
+  </div>
+
+  <!-- Hero text content -->
+  <div class="hero-body">
+    <div class="hero-chip">
+      <div class="hero-chip-dot"></div>
+      <!-- ✏️ Edit this tag line -->
+      <span class="hero-chip-text">Specialty Coffee · Rwanda · Direct Trade</span>
+    </div>
+
+    <!-- ✏️ Edit main headline -->
+    <h1 class="hero-title">
+      Rwanda's Finest<br>
+      Coffee, <span>Exported<br>to the World.</span>
+    </h1>
+
+    <!-- ✏️ Edit subtitle -->
+    <p class="hero-sub">
+      Three distinct terroirs. Hundreds of partner farmers.
+      One uncompromising commitment to quality — from cherry to shipment.
+    </p>
+
+    <div class="hero-btns">
+      <!-- ✏️ Edit button labels & links -->
+      <a href="#stations" class="btn-fill">Explore Our Origins</a>
+      <a href="#contact"  class="btn-line">Request Samples</a>
+    </div>
+  </div>
+
+  <!-- Slide indicator dots (one per slide) -->
+  <div class="hero-nav">
+    <div class="hdot on" data-i="0"></div>
+    <div class="hdot"    data-i="1"></div>
+    <div class="hdot"    data-i="2"></div>
+    <div class="hdot"    data-i="3"></div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     MARQUEE / TICKER BAR
+     ✏️  Edit: ticker text items
+         Duplicate items to keep the loop seamless
+     ═══════════════════════════════════════════════════════ -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- First set -->
+    <div class="marquee-item">Rwanda Specialty Coffee<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Direct Trade · Farmer First<span class="marquee-sep"></span></div>
+    <div class="marquee-item">725,000+ KGS in 2025<span class="marquee-sep"></span></div>
+    <div class="marquee-item">3 Washing Stations<span class="marquee-sep"></span></div>
+    <div class="marquee-item">220+ Jobs Created<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Traceable Single Origin<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Est. Kigali 2017<span class="marquee-sep"></span></div>
+    <!-- Duplicate set (needed for seamless loop) -->
+    <div class="marquee-item">Rwanda Specialty Coffee<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Direct Trade · Farmer First<span class="marquee-sep"></span></div>
+    <div class="marquee-item">725,000+ KGS in 2025<span class="marquee-sep"></span></div>
+    <div class="marquee-item">3 Washing Stations<span class="marquee-sep"></span></div>
+    <div class="marquee-item">220+ Jobs Created<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Traceable Single Origin<span class="marquee-sep"></span></div>
+    <div class="marquee-item">Est. Kigali 2017<span class="marquee-sep"></span></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     STATS BAR
+     ✏️  Edit: numbers and labels
+     ═══════════════════════════════════════════════════════ -->
+<section id="stats" aria-label="Key performance stats">
+  <div class="stat rv">
+    <span class="stat-n">725K+</span>
+    <span class="stat-l">KGS Produced · 2025</span>
+  </div>
+  <div class="stat rv d1">
+    <span class="stat-n">3</span>
+    <span class="stat-l">Washing Stations</span>
+  </div>
+  <div class="stat rv d2">
+    <span class="stat-n">220+</span>
+    <span class="stat-l">Jobs Created</span>
+  </div>
+  <div class="stat rv d3">
+    <span class="stat-n">67%</span>
+    <span class="stat-l">Avg. Gender Balance</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT SECTION
+     ✏️  Edit: about-img-main image, founder names, body text
+     ═══════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-grid">
+
+    <!-- Left: photo -->
+    <div class="about-imgs rv">
+      <!-- ✏️ Replace about.jpg -->
+      <img
+        src="assets/images/about.jpg"
+        alt="Bender Coffee Company founders and team at Rwanda coffee washing station"
+        class="about-img-main"
+        width="720" height="900"
+        loading="lazy"
+      />
+      <div class="about-yr">
+        <strong>2017</strong><br>Founded
+      </div>
+    </div>
+
+    <!-- Right: text -->
+    <div class="about-txt rv d2">
+      <div class="chip">
+        <div class="chip-line"></div>
+        <span class="chip-text">Our Story</span>
+      </div>
+
+      <!-- ✏️ Edit heading -->
+      <h2 class="sec-title">
+        Passion for Coffee,<br>
+        <em>Purpose for Rwanda</em>
+      </h2>
+
+      <!-- ✏️ Edit body paragraphs -->
+      <p class="sec-body">
+        Bender Coffee Company Ltd was founded in 2017 by Mr. Horanimpundu Jean Paul
+        and Ms. Uwamariya Odette — driven by a conviction that Rwanda's extraordinary
+        coffee deserved a world stage, and that the farmers who grow it deserved to
+        directly share in its value.
+      </p>
+      <p class="sec-body" style="margin-top:14px">
+        Through modern washing infrastructure, secure warehousing, and hands-on farmer
+        training, we ensure quality is protected at every step — from cherry delivery
+        to international shipment.
+      </p>
+
+      <!-- ✏️ Edit founder names & titles -->
+      <div class="founders-row">
+        <div>
+          <div class="founder-name">Horanimpundu Jean Paul</div>
+          <div class="founder-title">Co-Founder &amp; Director</div>
+        </div>
+        <div>
+          <div class="founder-name">Uwamariya Odette</div>
+          <div class="founder-title">Co-Founder &amp; Director</div>
+        </div>
+      </div>
+
+      <!-- ✏️ Edit value pillars -->
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-ico">🌱</div>
+          <strong>Farmer Empowerment</strong>
+          <span>Fair pay, practical training, and genuine partnership with every smallholder farmer.</span>
+        </div>
+        <div class="pillar">
+          <div class="pillar-ico">🔍</div>
+          <strong>Full Traceability</strong>
+          <span>Every lot traceable to its station, district, and harvest season.</span>
+        </div>
+        <div class="pillar">
+          <div class="pillar-ico">⚖️</div>
+          <strong>Gender Equity</strong>
+          <span>Up to 70% women in our workforce — structural, not symbolic.</span>
+        </div>
+        <div class="pillar">
+          <div class="pillar-ico">🏆</div>
+          <strong>Quality Assurance</strong>
+          <span>Rigorous QC from cherry delivery through to export readiness.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PHOTO STRIP (3-panel gallery)
+     ✏️  Edit: replace photostrip-1/2/3.jpg and labels
+     ═══════════════════════════════════════════════════════ -->
+<div id="photostrip" aria-label="Bender Exports washing station gallery">
+
+  <div class="ps-cell rv">
+    <!-- ✏️ Replace photostrip-1.jpg (wide panel) -->
+    <img src="assets/images/photostrip-1.jpg"
+         alt="Musaza Coffee Washing Station in Kirehe District, Eastern Rwanda"
+         loading="lazy" width="800" height="420"/>
+    <div class="ps-cell-label">Musaza · Kirehe</div>
+  </div>
+
+  <div class="ps-cell rv d1">
+    <!-- ✏️ Replace photostrip-2.jpg -->
+    <img src="assets/images/photostrip-2.jpg"
+         alt="Nyungwe Coffee Washing Station, Rusizi District Rwanda"
+         loading="lazy" width="400" height="420"/>
+    <div class="ps-cell-label">Nyungwe · Rusizi</div>
+  </div>
+
+  <div class="ps-cell rv d2">
+    <!-- ✏️ Replace photostrip-3.jpg -->
+    <img src="assets/images/photostrip-3.jpg"
+         alt="Nyarubaka Coffee Washing Station, Kamonyi District Rwanda"
+         loading="lazy" width="400" height="420"/>
+    <div class="ps-cell-label">Nyarubaka · Kamonyi</div>
+  </div>
+
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     WASHING STATIONS
+     ✏️  Edit each article: image, name, district, description,
+         metrics (KGS, jobs, gender balance)
+         To add a 4th station: duplicate an <article> block
+     ═══════════════════════════════════════════════════════ -->
+<section id="stations">
+
+  <div class="stations-hd rv">
+    <div class="chip"><div class="chip-line"></div><span class="chip-text">Washing Stations</span></div>
+    <h2 class="sec-title">Three Origins,<br><em>One Standard</em></h2>
+    <p class="sec-body">
+      Each of our washing stations sits within a unique Rwandan microclimate —
+      producing coffees with distinct flavor signatures, unified by the same
+      uncompromising processing discipline.
+    </p>
+  </div>
+
+  <!-- ── STATION 1: MUSAZA ── -->
+  <article class="s-row rv">
+    <div class="s-img">
+      <!-- ✏️ Replace station-musaza.jpg -->
+      <img src="assets/images/station-musaza.jpg"
+           alt="Musaza Coffee Washing Station in Kirehe District, Eastern Rwanda"
+           loading="lazy" width="880" height="520"/>
+      <div class="s-num">01</div>
+      <!-- ✏️ Edit province label -->
+      <div class="s-img-tag">Eastern Province</div>
+    </div>
+    <div class="s-txt">
+      <div class="chip"><div class="chip-line"></div><span class="chip-text">Station 01</span></div>
+      <!-- ✏️ Edit station name -->
+      <h3>Musaza<br><em>Washing Station</em></h3>
+      <!-- ✏️ Edit tags -->
+      <div class="s-tags">
+        <span class="s-tag">Kirehe District</span>
+        <span class="s-tag">Washed Process</span>
+        <span class="s-tag">Arabica</span>
+      </div>
+      <!-- ✏️ Edit description -->
+      <p class="s-desc">
+        At the gateway of Rwanda's eastern highlands, Musaza station benefits from
+        rising sun and fertile volcanic soils — producing bright, lively coffees with
+        exceptional citric acidity and a clean, crisp finish.
+      </p>
+      <!-- ✏️ Edit metrics -->
+      <div class="s-metrics">
+        <div class="s-m">
+          <span class="s-m-val">496,203</span>
+          <span class="s-m-key">KGS · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">135</span>
+          <span class="s-m-key">Jobs · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">70%</span>
+          <span class="s-m-key">Gender Balance</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── STATION 2: NYUNGWE ── -->
+  <article class="s-row rv">
+    <div class="s-img">
+      <!-- ✏️ Replace station-nyungwe.jpg -->
+      <img src="assets/images/station-nyungwe.jpg"
+           alt="Nyungwe Coffee Washing Station beside Nyungwe National Forest, Rusizi District"
+           loading="lazy" width="880" height="520"/>
+      <div class="s-num">02</div>
+      <div class="s-img-tag">Western Province</div>
+    </div>
+    <div class="s-txt">
+      <div class="chip"><div class="chip-line"></div><span class="chip-text">Station 02</span></div>
+      <h3>Nyungwe<br><em>Washing Station</em></h3>
+      <div class="s-tags">
+        <span class="s-tag">Rusizi District</span>
+        <span class="s-tag">High Altitude</span>
+        <span class="s-tag">Forest Edge</span>
+      </div>
+      <p class="s-desc">
+        Beside Nyungwe National Forest, rich volcanic soils and cool mountain air
+        shape beans into full-bodied, complex coffees with earthy depth and floral
+        notes — shaped by one of Africa's most biodiverse ecosystems.
+      </p>
+      <div class="s-metrics">
+        <div class="s-m">
+          <span class="s-m-val">52,758</span>
+          <span class="s-m-key">KGS · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">30</span>
+          <span class="s-m-key">Jobs · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">60%</span>
+          <span class="s-m-key">Gender Balance</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── STATION 3: NYARUBAKA ── -->
+  <article class="s-row rv">
+    <div class="s-img">
+      <!-- ✏️ Replace station-nyarubaka.jpg -->
+      <img src="assets/images/station-nyarubaka.jpg"
+           alt="Nyarubaka Coffee Washing Station in Kamonyi District, Southern Rwanda"
+           loading="lazy" width="880" height="520"/>  
+      <div class="s-num">03</div>
+      <div class="s-img-tag">Southern Province</div>
+    </div>
+    <div class="s-txt">
+      <div class="chip"><div class="chip-line"></div><span class="chip-text">Station 03</span></div>
+      <h3>Nyarubaka<br><em>Washing Station</em></h3>
+      <div class="s-tags">
+        <span class="s-tag">Kamonyi District</span>
+        <span class="s-tag">Heritage Farms</span>
+        <span class="s-tag">Smooth Profile</span>
+      </div>
+      <p class="s-desc">
+        In Rwanda's southern heartland, Nyarubaka reflects generations of farming
+        tradition. Smooth, balanced, and beautifully structured — coffees that carry
+        the quiet confidence of a region with deep roots in exceptional cultivation.
+      </p>
+      <div class="s-metrics">
+        <div class="s-m">
+          <span class="s-m-val">176,707</span>
+          <span class="s-m-key">KGS · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">55</span>
+          <span class="s-m-key">Jobs · 2025</span>
+        </div>
+        <div class="s-m">
+          <span class="s-m-val">70%</span>
+          <span class="s-m-key">Gender Balance</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     DARK SEPARATOR / QUOTE BLOCK
+     ✏️  Edit: quote text, four stat facts
+     ═══════════════════════════════════════════════════════ -->
+<div class="sep-dark rv">
+  <div class="sep-quote">
+    Coffee that's<br>
+    <em>good for the cup,</em><br>
+    and for the people.
+  </div>
+  <div class="sep-facts">
+    <div class="sep-fact">
+      <span class="sep-fact-v">3</span>
+      <span class="sep-fact-l">Provinces covered</span>
+    </div>
+    <div class="sep-fact">
+      <span class="sep-fact-v">8+</span>
+      <span class="sep-fact-l">Years exporting</span>
+    </div>
+    <div class="sep-fact">
+      <span class="sep-fact-v">100%</span>
+      <span class="sep-fact-l">Traceable lots</span>
+    </div>
+    <div class="sep-fact">
+      <span class="sep-fact-v">Global</span>
+      <span class="sep-fact-l">Market reach</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PROCESS SECTION
+     ✏️  Edit: step titles & descriptions, process images
+     ═══════════════════════════════════════════════════════ -->
+<section id="process">
+
+  <div class="process-top">
+    <div class="rv">
+      <div class="chip chip-light"><div class="chip-line"></div><span class="chip-text">From Farm to Export</span></div>
+      <h2 class="sec-title light">How We<br><em>Build Quality</em></h2>
+    </div>
+    <p class="sec-body lt rv d2">
+      Every Bender lot follows a meticulous five-step journey. From the moment a farmer
+      delivers ripe cherries to the day green beans leave Rwanda, quality is never left to chance.
+    </p>
+  </div>
+
+  <!-- ✏️ Edit steps (title + description) -->
+  <div class="step-grid rv">
+    <div class="step">
+      <div class="step-circle"><span class="step-n">01</span></div>
+      <div class="step-name">Cherry Harvest</div>
+      <div class="step-desc">Hand-picked ripe red cherries delivered by partner farmers</div>
+    </div>
+    <div class="step">
+      <div class="step-circle"><span class="step-n">02</span></div>
+      <div class="step-name">Wet Processing</div>
+      <div class="step-desc">Pulping, controlled fermentation, and thorough washing</div>
+    </div>
+    <div class="step">
+      <div class="step-circle"><span class="step-n">03</span></div>
+      <div class="step-name">Sun Drying</div>
+      <div class="step-desc">Raised African beds under equatorial sun, turned regularly</div>
+    </div>
+    <div class="step">
+      <div class="step-circle"><span class="step-n">04</span></div>
+      <div class="step-name">Milling &amp; Grading</div>
+      <div class="step-desc">Hulling, screen sorting, density grading, secure warehousing</div>
+    </div>
+    <div class="step">
+      <div class="step-circle"><span class="step-n">05</span></div>
+      <div class="step-name">QC &amp; Export</div>
+      <div class="step-desc">Cupping, final quality checks, international shipment</div>
+    </div>
+  </div>
+
+  <!-- ✏️ Replace process images -->
+  <div class="process-imgs rv">
+    <div class="pi">
+      <img src="assets/images/process-1.jpg"
+           alt="Coffee cherry harvest at Bender Exports Rwanda washing station"
+           loading="lazy"/>
+    </div>
+    <div class="pi">
+      <img src="assets/images/process-2.jpg"
+           alt="Coffee wet processing and quality control Rwanda"
+           loading="lazy"/>
+    </div>
+    <div class="pi">
+      <img src="assets/images/process-3.jpg"
+           alt="Coffee sun drying on raised beds at Bender Exports"
+           loading="lazy"/>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- ═══════════════════════════════════════════════════════
+     IMPACT SECTION
+     ✏️  Edit: images, three stat cards
+     ═══════════════════════════════════════════════════════ -->
+<section id="impact">
+
+  <div class="impact-top">
+    <div class="rv">
+      <div class="chip chip-light"><div class="chip-line"></div><span class="chip-text">Community Impact</span></div>
+      <h2 class="sec-title light">Coffee That<br><em>Changes Lives</em></h2>
+      <p class="sec-body lt" style="margin-top:20px">
+        We measure success not only in export tonnage, but in the communities
+        strengthened and the futures built across Rwanda's rural heartlands.
+      </p>
+      <a href="#contact" class="btn-fill" style="margin-top:32px;display:inline-flex">
+        Partner With Us
+      </a>
+    </div>
+
+    <div class="impact-imgs rv d2">
+      <!-- ✏️ Replace impact-main.jpg (large image) -->
+      <img src="assets/images/impact-main.jpg"
+           class="imp-main"
+           alt="Rwandan coffee farmers working at Bender Exports washing station"
+           loading="lazy" width="600" height="440"/>
+      <!-- ✏️ Replace impact-accent.jpg (small overlapping image) -->
+      <img src="assets/images/impact-accent.jpg"
+           class="imp-accent"
+           alt="Bender Exports team empowering local farming communities in Rwanda"
+           loading="lazy" width="280" height="240"/>
+    </div>
+  </div>
+
+  <!-- ✏️ Edit impact stat cards -->
+  <div class="impact-cards rv">
+    <div class="impact-card">
+      <div class="ic-ico">👩‍🌾</div>
+      <div class="ic-n">220+</div>
+      <div class="ic-l">Direct Jobs Created</div>
+      <div class="ic-t">
+        Permanent and seasonal employment across Kirehe, Rusizi, and Kamonyi districts in 2025.
+      </div>
+    </div>
+    <div class="impact-card">
+      <div class="ic-ico">⚖️</div>
+      <div class="ic-n">67%</div>
+      <div class="ic-l">Avg. Gender Balance</div>
+      <div class="ic-t">
+        Women make up the majority of our workforce — a deliberate structural commitment.
+      </div>
+    </div>
+    <div class="impact-card">
+      <div class="ic-ico">☕</div>
+      <div class="ic-n">725K+</div>
+      <div class="ic-l">KGS Produced · 2025</div>
+      <div class="ic-t">
+        Premium green beans representing Rwanda's finest highland coffee, exported internationally.
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT / ENQUIRE SECTION
+     ✏️  Edit: contact details, export markets, form fields
+     ═══════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="contact-grid">
+
+    <!-- Left: contact info -->
+    <div class="contact-left rv">
+      <div class="chip"><div class="chip-line"></div><span class="chip-text">Work With Us</span></div>
+      <h2 class="sec-title" style="font-size:clamp(2rem,3.8vw,3.4rem)">
+        Start a<br><em>Conversation</em>
+      </h2>
+      <p class="sec-body">
+        Whether you're a specialty roaster, importer, or distributor seeking
+        traceable African origins — we're ready to discuss your sourcing needs
+        and arrange sample shipments.
+      </p>
+
+      <div style="margin-top:32px">
+        <!-- ✏️ Edit contact details -->
+        <div class="cinfo">
+          <div class="cinfo-icon">📍</div>
+          <div>
+            <div class="cinfo-label">Headquarters</div>
+            <div class="cinfo-val">Kigali, Rwanda</div>
+          </div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-icon">✉️</div>
+          <div>
+            <div class="cinfo-label">Email</div>
+            <div class="cinfo-val">benderexportsltd@gmail.com</div>
+          </div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-icon">📞</div>
+          <div>
+            <div class="cinfo-label">Phone</div>
+            <!-- ✏️ Replace with real phone number -->
+            <div class="cinfo-val">+250 788 301 437</div>
+          </div>
+        </div>
+        <div class="cinfo">
+          <div class="cinfo-icon">🌍</div>
+          <div>
+            <div class="cinfo-label">Website</div>
+            <div class="cinfo-val">bender-exports.com</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✏️ Edit export market tags -->
+      <div class="markets">
+        <div class="markets-label">Export Markets</div>
+        <div class="market-tags">
+          <span class="market-tag">Europe</span>
+          <span class="market-tag">North America</span>
+          <span class="market-tag">Asia Pacific</span>
+          <span class="market-tag">Middle East</span>
+          <span class="market-tag">East Africa</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: enquiry form -->
+    <div class="form-box rv d2">
+      <h3>Request Samples <em>or a Quote</em></h3>
+
+      <div class="fr2">
+        <div class="fg">
+          <label for="fn">First Name *</label>
+          <input type="text" id="fn" placeholder="Jane" required autocomplete="given-name"/>
+        </div>
+        <div class="fg">
+          <label for="ln">Last Name *</label>
+          <input type="text" id="ln" placeholder="Smith" required autocomplete="family-name"/>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label for="em">Email Address *</label>
+        <input type="email" id="em" placeholder="jane@roastery.com" required autocomplete="email"/>
+      </div>
+
+      <div class="fr2">
+        <div class="fg">
+          <label for="co">Company</label>
+          <input type="text" id="co" placeholder="Your Company" autocomplete="organization"/>
+        </div>
+        <div class="fg">
+          <label for="ct">Country *</label>
+          <input type="text" id="ct" placeholder="Germany" required autocomplete="country-name"/>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label for="role">I am a</label>
+        <select id="role">
+          <option value="">Select your role…</option>
+          <option>Specialty Coffee Roaster</option>
+          <option>Green Coffee Importer</option>
+          <option>Coffee Distributor / Trader</option>
+          <option>Wholesale Buyer</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label for="interest">I'm Interested In</label>
+        <select id="interest">
+          <option value="">Select an option…</option>
+          <option>Green Bean Samples</option>
+          <option>Volume Pricing &amp; Export Quote</option>
+          <option>Specific Station / Lot Details</option>
+          <option>Partnership or Distribution</option>
+          <option>Farm Visit or Cupping Session</option>
+        </select>
+      </div>
+
+      <div class="fg">
+        <label for="msg">Message</label>
+        <textarea id="msg" placeholder="Tell us about your sourcing needs, target volumes, or any questions…"></textarea>
+      </div>
+
+      <!-- ✏️ Edit button label -->
+      <button type="button" class="btn-submit" id="submitBtn">Send Enquiry →</button>
+      <p class="form-note">We respond within 1–2 business days. Sample shipments available upon request.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+     ✏️  Edit: logo, tagline, column links, copyright
+     ═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <!-- ✏️ Replace logo.png -->
+      <img src="assets/images/logo.png" alt="Bender Exports" width="110" height="44" loading="lazy"/>
+      <p class="footer-tagline">Genuine coffee from the heart of Africa.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#impact">Community Impact</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Origins</h4>
+      <ul>
+        <li><a href="#stations">Musaza · Kirehe</a></li>
+        <li><a href="#stations">Nyungwe · Rusizi</a></li>
+        <li><a href="#stations">Nyarubaka · Kamonyi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>For Buyers</h4>
+      <ul>
+        <li><a href="#contact">Request Samples</a></li>
+        <li><a href="#contact">Export Pricing</a></li>
+        <li><a href="#contact">Traceability Docs</a></li>
+        <li><a href="#contact">Farm Visits</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <!-- ✏️ Edit copyright year & company name -->
+    <p class="footer-copy">
+      © 2026 <a href="https://bender-exports.com">Bender Coffee Company Ltd</a>. All rights reserved.
+      &nbsp;·&nbsp; <a href="mailto:benderexportsltd@gmail.com">benderexportsltd@gmail.com</a>
+    </p>
+    <p class="footer-badge"></p>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT — loaded last for performance
+     Edit js/main.js for all interactions
+     ═══════════════════════════════════════════════════════ -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
